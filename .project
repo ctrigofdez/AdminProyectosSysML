@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>CasoUso</name>
+=======
+	<name>Velocimetro</name>
+>>>>>>> branch 'master' of https://github.com/ctrigofdez/AdminProyectosSysML
 	<comment></comment>
 	<projects>
 	</projects>
