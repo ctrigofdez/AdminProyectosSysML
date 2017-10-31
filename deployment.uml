@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_JcMbsLkIEeeXQce_WyxEpg" name="RootElement">
+  <packagedElement xmi:type="uml:Node" xmi:id="_dpFLwLkIEeeXQce_WyxEpg" name="Arduino">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_9ETKkLkKEeeXQce_WyxEpg">
+      <body>Genuino UNO &#xD;
+UART Communication</body>
+    </ownedComment>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_I7R1ELkKEeeXQce_WyxEpg" name="vel servo" type="_z6ZRsLkIEeeXQce_WyxEpg" association="_I7OxwLkKEeeXQce_WyxEpg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_t1KRcbkLEeeXQce_WyxEpg" name="lcd odometer" type="_kMwMwLkLEeeXQce_WyxEpg" association="_t1JqYLkLEeeXQce_WyxEpg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ay9WYbkMEeeXQce_WyxEpg" name="led's array" type="_BDgVoLkMEeeXQce_WyxEpg" association="_ay8IQLkMEeeXQce_WyxEpg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Device" xmi:id="_z6ZRsLkIEeeXQce_WyxEpg" name="Vel Servo">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_4TuXgLkKEeeXQce_WyxEpg">
+      <body>Vel 0-140</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_I7OxwLkKEeeXQce_WyxEpg" name="UART" memberEnd="_I7R1ELkKEeeXQce_WyxEpg _I7ScILkKEeeXQce_WyxEpg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_I7Qm8LkKEeeXQce_WyxEpg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_I7ROALkKEeeXQce_WyxEpg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_I7ScILkKEeeXQce_WyxEpg" name="arduinio" type="_dpFLwLkIEeeXQce_WyxEpg" association="_I7OxwLkKEeeXQce_WyxEpg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Artifact" xmi:id="_yXH2MLkKEeeXQce_WyxEpg" name="Vel Module"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_1nYtELkKEeeXQce_WyxEpg" name="Executable" client="_z6ZRsLkIEeeXQce_WyxEpg" supplier="_yXH2MLkKEeeXQce_WyxEpg"/>
+  <packagedElement xmi:type="uml:Device" xmi:id="_kMwMwLkLEeeXQce_WyxEpg" name="LCD odometer">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_zGvf0LkLEeeXQce_WyxEpg">
+      <body>Non modificable &#xD;
+value</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Artifact" xmi:id="_nH9ZoLkLEeeXQce_WyxEpg" name="Odometer Module">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_o2uokLkLEeeXQce_WyxEpg">
+      <body>Trip odo / odo</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_sFylkLkLEeeXQce_WyxEpg" name="Executable" client="_kMwMwLkLEeeXQce_WyxEpg" supplier="_nH9ZoLkLEeeXQce_WyxEpg"/>
+  <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_t1JqYLkLEeeXQce_WyxEpg" name="UART" memberEnd="_t1KRcbkLEeeXQce_WyxEpg _t1K4gLkLEeeXQce_WyxEpg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t1JqYbkLEeeXQce_WyxEpg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_t1KRcLkLEeeXQce_WyxEpg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_t1K4gLkLEeeXQce_WyxEpg" name="arduinio" type="_dpFLwLkIEeeXQce_WyxEpg" association="_t1JqYLkLEeeXQce_WyxEpg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Device" xmi:id="_BDgVoLkMEeeXQce_WyxEpg" name="LED's Array">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_GjAEMLkMEeeXQce_WyxEpg">
+      <body>5 LED's array</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Artifact" xmi:id="_EUXpcLkMEeeXQce_WyxEpg" name="Gas Module">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_PvuScLkMEeeXQce_WyxEpg">
+      <body>Deberá llevarse &#xD;
+a cabo en 4 segundos &#xD;
+de manera gradual.</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_Y9u6ILkMEeeXQce_WyxEpg" name="Executable" client="_BDgVoLkMEeeXQce_WyxEpg" supplier="_EUXpcLkMEeeXQce_WyxEpg"/>
+  <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_ay8IQLkMEeeXQce_WyxEpg" name="UART" memberEnd="_ay9WYbkMEeeXQce_WyxEpg _ay9WYrkMEeeXQce_WyxEpg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ay8vULkMEeeXQce_WyxEpg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ay9WYLkMEeeXQce_WyxEpg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ay9WYrkMEeeXQce_WyxEpg" name="arduinio" type="_dpFLwLkIEeeXQce_WyxEpg" association="_ay8IQLkMEeeXQce_WyxEpg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Device" xmi:id="_i6EncLkMEeeXQce_WyxEpg" name="Visual Indicators">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_lzBKgLkMEeeXQce_WyxEpg">
+      <body>LED's &#xD;
+Visual Ind.</body>
+    </ownedComment>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_3Y7RQbkMEeeXQce_WyxEpg" name="arduino" type="_dpFLwLkIEeeXQce_WyxEpg" association="_3Y6qMLkMEeeXQce_WyxEpg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Artifact" xmi:id="_phluALkMEeeXQce_WyxEpg" name="V. Indicators module">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_vMeNMLkMEeeXQce_WyxEpg">
+      <body>Puerta abierta&#xD;
+Cinturón de seguridad sin abrochar&#xD;
+Cambio de Luces (altas)&#xD;
+Freno de mano&#xD;
+</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_09kpILkMEeeXQce_WyxEpg" name="Executable" client="_i6EncLkMEeeXQce_WyxEpg" supplier="_phluALkMEeeXQce_WyxEpg"/>
+  <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_3Y6qMLkMEeeXQce_WyxEpg" name="UART" memberEnd="_3Y7RQbkMEeeXQce_WyxEpg _3Y74ULkMEeeXQce_WyxEpg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3Y6qMbkMEeeXQce_WyxEpg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3Y7RQLkMEeeXQce_WyxEpg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_3Y74ULkMEeeXQce_WyxEpg" name="visual indicators" type="_i6EncLkMEeeXQce_WyxEpg" association="_3Y6qMLkMEeeXQce_WyxEpg"/>
+  </packagedElement>
+</uml:Model>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks" xmlns:DeprecatedElements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/DeprecatedElements" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML/DeprecatedElements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//deprecatedelements http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements">
+  <uml:Model xmi:id="_OmDIMLUoEeeg-K7kxgiQPA" name="RootElement">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_OuGRALUoEeeg-K7kxgiQPA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_OuPa4LUoEeeg-K7kxgiQPA">
+      <importedPackage xmi:type="uml:Package" href="pathmap://SysML14_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_W7gXQLUoEeeg-K7kxgiQPA" name="Conductor"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_c7OBgLUpEeeg-K7kxgiQPA" name="Velocimetro Fisico"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_NLLawLUqEeeg-K7kxgiQPA" name="Formula"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_fDijcLUqEeeg-K7kxgiQPA" name="recibir dato"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ic_LgLUqEeeg-K7kxgiQPA" name="proceso"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_XLdCULUpEeeg-K7kxgiQPA" name="Status de Ignicion activa"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_RKtn4LUpEeeg-K7kxgiQPA" name="Modulo de comunicacion"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_KOUBALUqEeeg-K7kxgiQPA" client="_RKtn4LUpEeeg-K7kxgiQPA" supplier="_XLdCULUpEeeg-K7kxgiQPA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_LTwmILUqEeeg-K7kxgiQPA" client="_W7gXQLUoEeeg-K7kxgiQPA" supplier="_c7OBgLUpEeeg-K7kxgiQPA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_qAR90LUqEeeg-K7kxgiQPA" client="_ic_LgLUqEeeg-K7kxgiQPA" supplier="_c7OBgLUpEeeg-K7kxgiQPA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_q_WOILUqEeeg-K7kxgiQPA" client="_NLLawLUqEeeg-K7kxgiQPA" supplier="_ic_LgLUqEeeg-K7kxgiQPA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_KK39ILqpEeeS3qgwzAnMCA" client="_RKtn4LUpEeeg-K7kxgiQPA" supplier="_fDijcLUqEeeg-K7kxgiQPA"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_K8MFULqpEeeS3qgwzAnMCA" client="_fDijcLUqEeeg-K7kxgiQPA" supplier="_NLLawLUqEeeg-K7kxgiQPA"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_9u-r0L3XEeepfsfxbh3Sgw" name="conductor">
+      <generalization xmi:type="uml:Generalization" xmi:id="_FFj30L3YEeepfsfxbh3Sgw" general="_A5e48L3YEeepfsfxbh3Sgw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_-um80L3XEeepfsfxbh3Sgw" name="modulo de comunicaccion">
+      <generalization xmi:type="uml:Generalization" xmi:id="_Ett_kL3YEeepfsfxbh3Sgw" general="_A5e48L3YEeepfsfxbh3Sgw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_A5e48L3YEeepfsfxbh3Sgw" name="percibir la velocidad actual"/>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_KQ9lsL3YEeepfsfxbh3Sgw" name="Interaction1">
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_LraKcL3YEeepfsfxbh3Sgw" name="Lifeline"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_5lElQL3ZEeepfsfxbh3Sgw" name="velocimetro"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_bu6_cL3aEeepfsfxbh3Sgw" name="dato para muestrear"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_eMueoL3aEeepfsfxbh3Sgw" name="status de ignicion"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_eD0LgL3gEeepfsfxbh3Sgw" name="formula"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jW-HML3gEeepfsfxbh3Sgw" name="comunicacion"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_y9A9EL3iEeepfsfxbh3Sgw" name="velocimetro">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ZsgzE73rEeepfsfxbh3Sgw" name="indicador visual" type="_TxuPoL3rEeepfsfxbh3Sgw" aggregation="composite" association="_ZsgzEL3rEeepfsfxbh3Sgw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_LRwHw73tEeepfsfxbh3Sgw" name="encender " type="_vdEcsL3oEeepfsfxbh3Sgw" association="_LRwHwL3tEeepfsfxbh3Sgw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_4kSRIL3uEeepfsfxbh3Sgw" name="Velocidad = KM/H"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_KoghAL3uEeepfsfxbh3Sgw" name="ProcesarVelocidad">
+        <ownedRule xmi:type="uml:DurationConstraint" xmi:id="_aOleAL3uEeepfsfxbh3Sgw" name="1111"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_TvvLQL3uEeepfsfxbh3Sgw" name="rawSpeed" type="_oDh_IL3vEeepfsfxbh3Sgw"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_1wkp0L3iEeepfsfxbh3Sgw" name="servomotor"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_vdEcsL3oEeepfsfxbh3Sgw" name="encender "/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_W1wTQL3pEeepfsfxbh3Sgw" name="aguja"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_TxuPoL3rEeepfsfxbh3Sgw" name="indicador visual">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_aPrKg73rEeepfsfxbh3Sgw" name="servomotor" type="_1wkp0L3iEeepfsfxbh3Sgw" aggregation="composite" association="_aPrKgL3rEeepfsfxbh3Sgw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_aqgFU73rEeepfsfxbh3Sgw" name="aguja" type="_W1wTQL3pEeepfsfxbh3Sgw" aggregation="composite" association="_aqgFUL3rEeepfsfxbh3Sgw"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_ouAKYL3tEeepfsfxbh3Sgw" name="Port1" aggregation="composite"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ZsgzEL3rEeepfsfxbh3Sgw" memberEnd="_ZsgzE73rEeepfsfxbh3Sgw _ZsgzFL3rEeepfsfxbh3Sgw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZsgzEb3rEeepfsfxbh3Sgw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZsgzEr3rEeepfsfxbh3Sgw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ZsgzFL3rEeepfsfxbh3Sgw" name="velocimetro" type="_y9A9EL3iEeepfsfxbh3Sgw" association="_ZsgzEL3rEeepfsfxbh3Sgw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_aPrKgL3rEeepfsfxbh3Sgw" memberEnd="_aPrKg73rEeepfsfxbh3Sgw _aPrKhL3rEeepfsfxbh3Sgw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_aPrKgb3rEeepfsfxbh3Sgw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_aPrKgr3rEeepfsfxbh3Sgw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_aPrKhL3rEeepfsfxbh3Sgw" name="indicador visual" type="_TxuPoL3rEeepfsfxbh3Sgw" association="_aPrKgL3rEeepfsfxbh3Sgw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_aqgFUL3rEeepfsfxbh3Sgw" memberEnd="_aqgFU73rEeepfsfxbh3Sgw _aqgFVL3rEeepfsfxbh3Sgw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_aqgFUb3rEeepfsfxbh3Sgw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_aqgFUr3rEeepfsfxbh3Sgw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_aqgFVL3rEeepfsfxbh3Sgw" name="indicador visual" type="_TxuPoL3rEeepfsfxbh3Sgw" association="_aqgFUL3rEeepfsfxbh3Sgw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_-7z7QL3rEeepfsfxbh3Sgw" name="ARDUINO POWER">
+      <generalization xmi:type="uml:Generalization" xmi:id="_WJdGkL3sEeepfsfxbh3Sgw" general="_vdEcsL3oEeepfsfxbh3Sgw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_LRwHwL3tEeepfsfxbh3Sgw" name="AssociationClass1" memberEnd="_LRwHw73tEeepfsfxbh3Sgw _LRwHxL3tEeepfsfxbh3Sgw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LRwHwb3tEeepfsfxbh3Sgw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LRwHwr3tEeepfsfxbh3Sgw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_LRwHxL3tEeepfsfxbh3Sgw" name="velocimetro" type="_y9A9EL3iEeepfsfxbh3Sgw" association="_LRwHwL3tEeepfsfxbh3Sgw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_oDh_IL3vEeepfsfxbh3Sgw" name="KMH"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Oq0TcLUoEeeg-K7kxgiQPA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Oq-EcLUoEeeg-K7kxgiQPA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Ot8f8LUoEeeg-K7kxgiQPA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ot8f8bUoEeeg-K7kxgiQPA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_OuGQ8LUoEeeg-K7kxgiQPA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OuGQ8bUoEeeg-K7kxgiQPA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_OuGQ8rUoEeeg-K7kxgiQPA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OuGQ87UoEeeg-K7kxgiQPA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_OuGQ9LUoEeeg-K7kxgiQPA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OuGQ9bUoEeeg-K7kxgiQPA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_OuGQ9rUoEeeg-K7kxgiQPA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OuGQ97UoEeeg-K7kxgiQPA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_OuGQ-LUoEeeg-K7kxgiQPA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OuGQ-bUoEeeg-K7kxgiQPA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_OuGQ-rUoEeeg-K7kxgiQPA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OuGQ-7UoEeeg-K7kxgiQPA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_OuGQ_LUoEeeg-K7kxgiQPA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OuGQ_bUoEeeg-K7kxgiQPA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_OuGQ_rUoEeeg-K7kxgiQPA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OuGQ_7UoEeeg-K7kxgiQPA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-dSE0L3uEeepfsfxbh3Sgw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-dSE0b3uEeepfsfxbh3Sgw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+  </uml:Model>
+  <Blocks:Block xmi:id="_y9T4AL3iEeepfsfxbh3Sgw" base_Class="_y9A9EL3iEeepfsfxbh3Sgw"/>
+  <Blocks:Block xmi:id="_1wua0L3iEeepfsfxbh3Sgw" base_Class="_1wkp0L3iEeepfsfxbh3Sgw"/>
+  <Blocks:Block xmi:id="_vdONsL3oEeepfsfxbh3Sgw" base_Class="_vdEcsL3oEeepfsfxbh3Sgw"/>
+  <Blocks:Block xmi:id="_W2DOML3pEeepfsfxbh3Sgw" base_Class="_W1wTQL3pEeepfsfxbh3Sgw"/>
+  <Blocks:Block xmi:id="_Tx4AoL3rEeepfsfxbh3Sgw" base_Class="_TxuPoL3rEeepfsfxbh3Sgw"/>
+  <DeprecatedElements:FlowSpecification xmi:id="_-79FML3rEeepfsfxbh3Sgw" base_Interface="_-7z7QL3rEeepfsfxbh3Sgw"/>
+  <Requirements:Trace xmi:id="_LtSCoL3sEeepfsfxbh3Sgw"/>
+  <Blocks:Block xmi:id="_LR54wL3tEeepfsfxbh3Sgw" base_Class="_LRwHwL3tEeepfsfxbh3Sgw"/>
+  <Blocks:ValueType xmi:id="_oDrJEL3vEeepfsfxbh3Sgw" base_DataType="_oDh_IL3vEeepfsfxbh3Sgw"/>
+</xmi:XMI>
