@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:configuration="http://www.eclipse.org/papyrus/infra/viewpoints/configuration" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/viewpoints/policy/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_8E3QMKfaEeeaAINcJIfn-g" type="PapyrusUMLClassDiagram" name="VELREQ" measurementUnit="Pixel">
   <children xmi:type="notation:Shape" xmi:id="_1BFO8KfbEeeaAINcJIfn-g" type="Class_Shape">
     <children xmi:type="notation:DecorationNode" xmi:id="_1BF2AKfbEeeaAINcJIfn-g" type="Class_NameLabel"/>
@@ -350,3 +351,6 @@
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0HU4QKfiEeeaAINcJIfn-g" id="(0.2422680412371134,0.9875776397515528)"/>
   </edges>
 </notation:Diagram>
+=======
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"/>
+>>>>>>> branch 'master' of https://github.com/ctrigofdez/AdminProyectosSysML
